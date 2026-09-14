@@ -13,9 +13,10 @@ Small stateless ATProto feed server for a local/test PDS.
 - Counts likes across all actor repositories.
 - Counts direct replies across all actor repositories.
 - Ranks posts with:
-
+```bash
     points = likes + replies*2
     score = max(points-1, 0) / (age_hours+2)^1.8
+```
 
 ## Configuration
 
